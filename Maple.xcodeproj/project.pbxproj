@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11C4BC1203209DAFDF07148B /* Pods_MapleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8B28C173754BCE0FA90431 /* Pods_MapleTests.framework */; };
+		3F3519C5296E898A00EF5CEB /* MapleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3519C4296E898A00EF5CEB /* MapleTests.swift */; };
+		3F3519CE296E922400EF5CEB /* CubeHistoryAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3519CD296E922400EF5CEB /* CubeHistoryAPIRepository.swift */; };
+		3F3519D2296E92FC00EF5CEB /* CubeHistoryAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3519D1296E92FC00EF5CEB /* CubeHistoryAPIProvider.swift */; };
+		3F3519D4296E94B800EF5CEB /* ProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3519D3296E94B800EF5CEB /* ProviderProtocol.swift */; };
 		3F5D2754296D353900DDBEC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2753296D353900DDBEC1 /* AppDelegate.swift */; };
 		3F5D2756296D353900DDBEC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2755296D353900DDBEC1 /* SceneDelegate.swift */; };
-		3F5D2758296D353900DDBEC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2757296D353900DDBEC1 /* ViewController.swift */; };
 		3F5D275B296D353900DDBEC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D2759296D353900DDBEC1 /* Main.storyboard */; };
 		3F5D275D296D353B00DDBEC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D275C296D353B00DDBEC1 /* Assets.xcassets */; };
 		3F5D2760296D353B00DDBEC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5D275E296D353B00DDBEC1 /* LaunchScreen.storyboard */; };
-		3F5D276B296D353B00DDBEC1 /* MapleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D276A296D353B00DDBEC1 /* MapleTests.swift */; };
-		3F5D2775296D353B00DDBEC1 /* MapleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2774296D353B00DDBEC1 /* MapleUITests.swift */; };
-		3F5D2777296D353B00DDBEC1 /* MapleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2776296D353B00DDBEC1 /* MapleUITestsLaunchTests.swift */; };
+		3F5D2787296D37B200DDBEC1 /* CubeHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2786296D37B200DDBEC1 /* CubeHistory.swift */; };
+		3F5D278D296D38F500DDBEC1 /* CubeHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D278C296D38F500DDBEC1 /* CubeHistoryView.swift */; };
+		3F5D2797296D3E2C00DDBEC1 /* UserDefaultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2796296D3E2C00DDBEC1 /* UserDefaultsRepository.swift */; };
+		3F5D2799296D3E5A00DDBEC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2798296D3E5A00DDBEC1 /* Constants.swift */; };
+		3F6862F9296E527900790DAC /* CubeHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6862F8296E527900790DAC /* CubeHistoryViewModel.swift */; };
+		3F98F5BB296E5BBE0085F516 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F98F5BA296E5BBE0085F516 /* Alamofire */; };
+		59C92E33C80AFAC5B3E56913 /* Pods_Maple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CBE2BFEDE79A892D820B6 /* Pods_Maple.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F5D2767296D353B00DDBEC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3F5D2748296D353900DDBEC1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F5D274F296D353900DDBEC1;
-			remoteInfo = Maple;
-		};
-		3F5D2771296D353B00DDBEC1 /* PBXContainerItemProxy */ = {
+		3F3519C6296E898A00EF5CEB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3F5D2748296D353900DDBEC1 /* Project object */;
 			proxyType = 1;
@@ -36,53 +37,85 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15D3EE5D3E2E9E988D7F181B /* Pods-Maple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple.debug.xcconfig"; path = "Target Support Files/Pods-Maple/Pods-Maple.debug.xcconfig"; sourceTree = "<group>"; };
+		250CBE2BFEDE79A892D820B6 /* Pods_Maple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3519C2296E898A00EF5CEB /* MapleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F3519C4296E898A00EF5CEB /* MapleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleTests.swift; sourceTree = "<group>"; };
+		3F3519CD296E922400EF5CEB /* CubeHistoryAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeHistoryAPIRepository.swift; sourceTree = "<group>"; };
+		3F3519D1296E92FC00EF5CEB /* CubeHistoryAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeHistoryAPIProvider.swift; sourceTree = "<group>"; };
+		3F3519D3296E94B800EF5CEB /* ProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderProtocol.swift; sourceTree = "<group>"; };
 		3F5D2750296D353900DDBEC1 /* Maple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5D2753296D353900DDBEC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5D2755296D353900DDBEC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F5D2757296D353900DDBEC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3F5D275A296D353900DDBEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F5D275C296D353B00DDBEC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5D275F296D353B00DDBEC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5D2761296D353B00DDBEC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F5D2766296D353B00DDBEC1 /* MapleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F5D276A296D353B00DDBEC1 /* MapleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleTests.swift; sourceTree = "<group>"; };
-		3F5D2770296D353B00DDBEC1 /* MapleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F5D2774296D353B00DDBEC1 /* MapleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleUITests.swift; sourceTree = "<group>"; };
-		3F5D2776296D353B00DDBEC1 /* MapleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F5D2786296D37B200DDBEC1 /* CubeHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeHistory.swift; sourceTree = "<group>"; };
+		3F5D278C296D38F500DDBEC1 /* CubeHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeHistoryView.swift; sourceTree = "<group>"; };
+		3F5D2796296D3E2C00DDBEC1 /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
+		3F5D2798296D3E5A00DDBEC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F6862F8296E527900790DAC /* CubeHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeHistoryViewModel.swift; sourceTree = "<group>"; };
+		A63FFDBB6FD768E94755423E /* Pods-MapleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapleTests.release.xcconfig"; path = "Target Support Files/Pods-MapleTests/Pods-MapleTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA8B28C173754BCE0FA90431 /* Pods_MapleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB68001F17BD9C923C22FCAC /* Pods-Maple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple.release.xcconfig"; path = "Target Support Files/Pods-Maple/Pods-Maple.release.xcconfig"; sourceTree = "<group>"; };
+		FD1F9087B0C1DB8DDBC134C6 /* Pods-MapleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapleTests.debug.xcconfig"; path = "Target Support Files/Pods-MapleTests/Pods-MapleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3F3519BF296E898A00EF5CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C4BC1203209DAFDF07148B /* Pods_MapleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F5D274D296D353900DDBEC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F5D2763296D353B00DDBEC1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F5D276D296D353B00DDBEC1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				3F98F5BB296E5BBE0085F516 /* Alamofire in Frameworks */,
+				59C92E33C80AFAC5B3E56913 /* Pods_Maple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F045E6429A856900034D4BD /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				3F3519D1296E92FC00EF5CEB /* CubeHistoryAPIProvider.swift */,
+				3F3519D3296E94B800EF5CEB /* ProviderProtocol.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		3F045E6529A8569C0034D4BD /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				3F5D2786296D37B200DDBEC1 /* CubeHistory.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		3F3519C3296E898A00EF5CEB /* MapleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F3519C4296E898A00EF5CEB /* MapleTests.swift */,
+			);
+			path = MapleTests;
+			sourceTree = "<group>";
+		};
 		3F5D2747296D353900DDBEC1 = {
 			isa = PBXGroup;
 			children = (
 				3F5D2752296D353900DDBEC1 /* Maple */,
-				3F5D2769296D353B00DDBEC1 /* MapleTests */,
-				3F5D2773296D353B00DDBEC1 /* MapleUITests */,
+				3F3519C3296E898A00EF5CEB /* MapleTests */,
 				3F5D2751296D353900DDBEC1 /* Products */,
+				3F6862F3296E3DC900790DAC /* Frameworks */,
+				71BD89D585380C94C55C8C33 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3F5D2750296D353900DDBEC1 /* Maple.app */,
-				3F5D2766296D353B00DDBEC1 /* MapleTests.xctest */,
-				3F5D2770296D353B00DDBEC1 /* MapleUITests.xctest */,
+				3F3519C2296E898A00EF5CEB /* MapleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,89 +131,126 @@
 		3F5D2752296D353900DDBEC1 /* Maple */ = {
 			isa = PBXGroup;
 			children = (
-				3F5D2753296D353900DDBEC1 /* AppDelegate.swift */,
-				3F5D2755296D353900DDBEC1 /* SceneDelegate.swift */,
-				3F5D2757296D353900DDBEC1 /* ViewController.swift */,
-				3F5D2759296D353900DDBEC1 /* Main.storyboard */,
-				3F5D275C296D353B00DDBEC1 /* Assets.xcassets */,
-				3F5D275E296D353B00DDBEC1 /* LaunchScreen.storyboard */,
+				3F6862F7296E4C6700790DAC /* Resources */,
+				3F6862F6296E4C4E00790DAC /* Extension */,
+				3F5D2785296D37A700DDBEC1 /* Service */,
+				3F5D2784296D379B00DDBEC1 /* Presentation */,
+				3F5D2783296D379100DDBEC1 /* Data */,
 				3F5D2761296D353B00DDBEC1 /* Info.plist */,
+				3F5D2798296D3E5A00DDBEC1 /* Constants.swift */,
 			);
 			path = Maple;
 			sourceTree = "<group>";
 		};
-		3F5D2769296D353B00DDBEC1 /* MapleTests */ = {
+		3F5D2783296D379100DDBEC1 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3F5D276A296D353B00DDBEC1 /* MapleTests.swift */,
+				3F045E6529A8569C0034D4BD /* Entities */,
+				3F5D2796296D3E2C00DDBEC1 /* UserDefaultsRepository.swift */,
+				3F3519CD296E922400EF5CEB /* CubeHistoryAPIRepository.swift */,
 			);
-			path = MapleTests;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		3F5D2773296D353B00DDBEC1 /* MapleUITests */ = {
+		3F5D2784296D379B00DDBEC1 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3F5D2774296D353B00DDBEC1 /* MapleUITests.swift */,
-				3F5D2776296D353B00DDBEC1 /* MapleUITestsLaunchTests.swift */,
+				3F5D278C296D38F500DDBEC1 /* CubeHistoryView.swift */,
+				3F6862F8296E527900790DAC /* CubeHistoryViewModel.swift */,
 			);
-			path = MapleUITests;
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3F5D2785296D37A700DDBEC1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3F045E6429A856900034D4BD /* Provider */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3F6862F3296E3DC900790DAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				250CBE2BFEDE79A892D820B6 /* Pods_Maple.framework */,
+				AA8B28C173754BCE0FA90431 /* Pods_MapleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F6862F6296E4C4E00790DAC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3F6862F7296E4C6700790DAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F5D2753296D353900DDBEC1 /* AppDelegate.swift */,
+				3F5D2755296D353900DDBEC1 /* SceneDelegate.swift */,
+				3F5D2759296D353900DDBEC1 /* Main.storyboard */,
+				3F5D275C296D353B00DDBEC1 /* Assets.xcassets */,
+				3F5D275E296D353B00DDBEC1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71BD89D585380C94C55C8C33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15D3EE5D3E2E9E988D7F181B /* Pods-Maple.debug.xcconfig */,
+				CB68001F17BD9C923C22FCAC /* Pods-Maple.release.xcconfig */,
+				FD1F9087B0C1DB8DDBC134C6 /* Pods-MapleTests.debug.xcconfig */,
+				A63FFDBB6FD768E94755423E /* Pods-MapleTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3F3519C1296E898A00EF5CEB /* MapleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F3519C8296E898A00EF5CEB /* Build configuration list for PBXNativeTarget "MapleTests" */;
+			buildPhases = (
+				68F7C086B5D280D06F791E7F /* [CP] Check Pods Manifest.lock */,
+				3F3519BE296E898A00EF5CEB /* Sources */,
+				3F3519BF296E898A00EF5CEB /* Frameworks */,
+				3F3519C0296E898A00EF5CEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F3519C7296E898A00EF5CEB /* PBXTargetDependency */,
+			);
+			name = MapleTests;
+			productName = MapleTests;
+			productReference = 3F3519C2296E898A00EF5CEB /* MapleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3F5D274F296D353900DDBEC1 /* Maple */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5D277A296D353B00DDBEC1 /* Build configuration list for PBXNativeTarget "Maple" */;
 			buildPhases = (
+				514591586415C71779691BDC /* [CP] Check Pods Manifest.lock */,
 				3F5D274C296D353900DDBEC1 /* Sources */,
 				3F5D274D296D353900DDBEC1 /* Frameworks */,
 				3F5D274E296D353900DDBEC1 /* Resources */,
+				89F6CE193661A17CA936FF88 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Maple;
+			packageProductDependencies = (
+				3F98F5BA296E5BBE0085F516 /* Alamofire */,
+			);
 			productName = Maple;
 			productReference = 3F5D2750296D353900DDBEC1 /* Maple.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3F5D2765296D353B00DDBEC1 /* MapleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F5D277D296D353B00DDBEC1 /* Build configuration list for PBXNativeTarget "MapleTests" */;
-			buildPhases = (
-				3F5D2762296D353B00DDBEC1 /* Sources */,
-				3F5D2763296D353B00DDBEC1 /* Frameworks */,
-				3F5D2764296D353B00DDBEC1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3F5D2768296D353B00DDBEC1 /* PBXTargetDependency */,
-			);
-			name = MapleTests;
-			productName = MapleTests;
-			productReference = 3F5D2766296D353B00DDBEC1 /* MapleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3F5D276F296D353B00DDBEC1 /* MapleUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F5D2780296D353B00DDBEC1 /* Build configuration list for PBXNativeTarget "MapleUITests" */;
-			buildPhases = (
-				3F5D276C296D353B00DDBEC1 /* Sources */,
-				3F5D276D296D353B00DDBEC1 /* Frameworks */,
-				3F5D276E296D353B00DDBEC1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3F5D2772296D353B00DDBEC1 /* PBXTargetDependency */,
-			);
-			name = MapleUITests;
-			productName = MapleUITests;
-			productReference = 3F5D2770296D353B00DDBEC1 /* MapleUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -193,16 +262,12 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					3F3519C1296E898A00EF5CEB = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3F5D274F296D353900DDBEC1;
+					};
 					3F5D274F296D353900DDBEC1 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					3F5D2765296D353B00DDBEC1 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 3F5D274F296D353900DDBEC1;
-					};
-					3F5D276F296D353B00DDBEC1 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 3F5D274F296D353900DDBEC1;
 					};
 				};
 			};
@@ -215,18 +280,27 @@
 				Base,
 			);
 			mainGroup = 3F5D2747296D353900DDBEC1;
+			packageReferences = (
+				3F98F5B9296E5BBE0085F516 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3F5D2751296D353900DDBEC1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3F5D274F296D353900DDBEC1 /* Maple */,
-				3F5D2765296D353B00DDBEC1 /* MapleTests */,
-				3F5D276F296D353B00DDBEC1 /* MapleUITests */,
+				3F3519C1296E898A00EF5CEB /* MapleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3F3519C0296E898A00EF5CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F5D274E296D353900DDBEC1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,62 +311,105 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F5D2764296D353B00DDBEC1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F5D276E296D353B00DDBEC1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		514591586415C71779691BDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maple-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F7C086B5D280D06F791E7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89F6CE193661A17CA936FF88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maple/Pods-Maple-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Maple/Pods-Maple-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Maple/Pods-Maple-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		3F3519BE296E898A00EF5CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3519C5296E898A00EF5CEB /* MapleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3F5D274C296D353900DDBEC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F5D2758296D353900DDBEC1 /* ViewController.swift in Sources */,
 				3F5D2754296D353900DDBEC1 /* AppDelegate.swift in Sources */,
+				3F5D2799296D3E5A00DDBEC1 /* Constants.swift in Sources */,
+				3F5D2797296D3E2C00DDBEC1 /* UserDefaultsRepository.swift in Sources */,
+				3F3519D2296E92FC00EF5CEB /* CubeHistoryAPIProvider.swift in Sources */,
+				3F3519D4296E94B800EF5CEB /* ProviderProtocol.swift in Sources */,
 				3F5D2756296D353900DDBEC1 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F5D2762296D353B00DDBEC1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F5D276B296D353B00DDBEC1 /* MapleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3F5D276C296D353B00DDBEC1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F5D2777296D353B00DDBEC1 /* MapleUITestsLaunchTests.swift in Sources */,
-				3F5D2775296D353B00DDBEC1 /* MapleUITests.swift in Sources */,
+				3F3519CE296E922400EF5CEB /* CubeHistoryAPIRepository.swift in Sources */,
+				3F5D2787296D37B200DDBEC1 /* CubeHistory.swift in Sources */,
+				3F5D278D296D38F500DDBEC1 /* CubeHistoryView.swift in Sources */,
+				3F6862F9296E527900790DAC /* CubeHistoryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F5D2768296D353B00DDBEC1 /* PBXTargetDependency */ = {
+		3F3519C7296E898A00EF5CEB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3F5D274F296D353900DDBEC1 /* Maple */;
-			targetProxy = 3F5D2767296D353B00DDBEC1 /* PBXContainerItemProxy */;
-		};
-		3F5D2772296D353B00DDBEC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F5D274F296D353900DDBEC1 /* Maple */;
-			targetProxy = 3F5D2771296D353B00DDBEC1 /* PBXContainerItemProxy */;
+			targetProxy = 3F3519C6296E898A00EF5CEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -316,9 +433,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3F3519C9296E898A00EF5CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD1F9087B0C1DB8DDBC134C6 /* Pods-MapleTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P9DVHVRR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alijas.MapleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maple";
+			};
+			name = Debug;
+		};
+		3F3519CA296E898A00EF5CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A63FFDBB6FD768E94755423E /* Pods-MapleTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6P9DVHVRR7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alijas.MapleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maple";
+			};
+			name = Release;
+		};
 		3F5D2778296D353B00DDBEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -352,6 +516,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -379,6 +544,7 @@
 		3F5D2779296D353B00DDBEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -412,6 +578,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -432,6 +599,7 @@
 		};
 		3F5D277B296D353B00DDBEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D3EE5D3E2E9E988D7F181B /* Pods-Maple.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,8 +611,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +629,7 @@
 		};
 		3F5D277C296D353B00DDBEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB68001F17BD9C923C22FCAC /* Pods-Maple.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,8 +641,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,85 +657,18 @@
 			};
 			name = Release;
 		};
-		3F5D277E296D353B00DDBEC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6P9DVHVRR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alijas.MapleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maple";
-			};
-			name = Debug;
-		};
-		3F5D277F296D353B00DDBEC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6P9DVHVRR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alijas.MapleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Maple.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Maple";
-			};
-			name = Release;
-		};
-		3F5D2781296D353B00DDBEC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6P9DVHVRR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alijas.MapleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Maple;
-			};
-			name = Debug;
-		};
-		3F5D2782296D353B00DDBEC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6P9DVHVRR7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.alijas.MapleUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Maple;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3F3519C8296E898A00EF5CEB /* Build configuration list for PBXNativeTarget "MapleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F3519C9296E898A00EF5CEB /* Debug */,
+				3F3519CA296E898A00EF5CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3F5D274B296D353900DDBEC1 /* Build configuration list for PBXProject "Maple" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -583,25 +687,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F5D277D296D353B00DDBEC1 /* Build configuration list for PBXNativeTarget "MapleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F5D277E296D353B00DDBEC1 /* Debug */,
-				3F5D277F296D353B00DDBEC1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3F5D2780296D353B00DDBEC1 /* Build configuration list for PBXNativeTarget "MapleUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F5D2781296D353B00DDBEC1 /* Debug */,
-				3F5D2782296D353B00DDBEC1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F98F5B9296E5BBE0085F516 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F98F5BA296E5BBE0085F516 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F98F5B9296E5BBE0085F516 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3F5D2748296D353900DDBEC1 /* Project object */;
 }
