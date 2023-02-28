@@ -23,7 +23,6 @@
 		3F5D2799296D3E5A00DDBEC1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5D2798296D3E5A00DDBEC1 /* Constants.swift */; };
 		3F6862F9296E527900790DAC /* CubeHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6862F8296E527900790DAC /* CubeHistoryViewModel.swift */; };
 		3F98F5BB296E5BBE0085F516 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3F98F5BA296E5BBE0085F516 /* Alamofire */; };
-		3FA0D85329AD86970048F2E3 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA0D85229AD86970048F2E3 /* APIProvider.swift */; };
 		59C92E33C80AFAC5B3E56913 /* Pods_Maple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250CBE2BFEDE79A892D820B6 /* Pods_Maple.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		3F5D2796296D3E2C00DDBEC1 /* UserDefaultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsRepository.swift; sourceTree = "<group>"; };
 		3F5D2798296D3E5A00DDBEC1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F6862F8296E527900790DAC /* CubeHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeHistoryViewModel.swift; sourceTree = "<group>"; };
-		3FA0D85229AD86970048F2E3 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		A63FFDBB6FD768E94755423E /* Pods-MapleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapleTests.release.xcconfig"; path = "Target Support Files/Pods-MapleTests/Pods-MapleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AA8B28C173754BCE0FA90431 /* Pods_MapleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB68001F17BD9C923C22FCAC /* Pods-Maple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maple.release.xcconfig"; path = "Target Support Files/Pods-Maple/Pods-Maple.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 		3F5D2785296D37A700DDBEC1 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3FA0D85129AD868A0048F2E3 /* ProviderTest */,
 				3F045E6429A856900034D4BD /* Provider */,
 			);
 			path = Service;
@@ -198,14 +195,6 @@
 				3F5D275E296D353B00DDBEC1 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		3FA0D85129AD868A0048F2E3 /* ProviderTest */ = {
-			isa = PBXGroup;
-			children = (
-				3FA0D85229AD86970048F2E3 /* APIProvider.swift */,
-			);
-			path = ProviderTest;
 			sourceTree = "<group>";
 		};
 		71BD89D585380C94C55C8C33 /* Pods */ = {
@@ -409,7 +398,6 @@
 				3F5D2756296D353900DDBEC1 /* SceneDelegate.swift in Sources */,
 				3F3519CE296E922400EF5CEB /* CubeHistoryAPI.swift in Sources */,
 				3F5D2787296D37B200DDBEC1 /* CubeHistory.swift in Sources */,
-				3FA0D85329AD86970048F2E3 /* APIProvider.swift in Sources */,
 				3F5D278D296D38F500DDBEC1 /* CubeHistoryView.swift in Sources */,
 				3F6862F9296E527900790DAC /* CubeHistoryViewModel.swift in Sources */,
 			);
