@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6O1-Vj-bix">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YHj-MM-12k">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,42 +10,100 @@
     </dependencies>
     <scenes>
         <!--Cube History View-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="CubeHistoryView" customModule="Maple" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="OHW-sP-dS9"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="vBs-0L-Ckk">
             <objects>
-                <viewController id="AFg-a0-beg" sceneMemberID="viewController">
+                <viewController id="AFg-a0-beg" customClass="CubeHistoryView" customModule="Maple" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sli-Yc-rbf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mqe-ET-ZeA">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Mqe-ET-ZeA">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="c6M-di-sWf">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CubeHistoryTableViewCell" rowHeight="100" id="c6M-di-sWf" customClass="CubeHistoryTableViewCell" customModule="Maple" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c6M-di-sWf" id="zHx-S2-mpJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PS-Xg-5Oa" userLabel="에디셔널 등급">
+                                                    <rect key="frame" x="339.66666666666669" y="41" width="27" height="12.333333333333336"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlZ-9O-2H6" userLabel="결과">
+                                                    <rect key="frame" x="14" y="71.333333333333329" width="32" height="14.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqI-to-GIi" userLabel="큐브 타입">
+                                                    <rect key="frame" x="14" y="39" width="32" height="14.666666666666664"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oF-06-rXe" userLabel="잠재 등급">
+                                                    <rect key="frame" x="273.66666666666669" y="41" width="27" height="12.333333333333336"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zg-Ym-ih1" userLabel="사용한 장비">
+                                                    <rect key="frame" x="14" y="14" width="37" height="17"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="에디셔널" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOo-B3-pCe" userLabel="에디셔널 등급 표시">
+                                                    <rect key="frame" x="327" y="14" width="52" height="17"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잠재능력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnq-jx-wGO" userLabel="잠재 등급 표시">
+                                                    <rect key="frame" x="261" y="14" width="52" height="17"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022-12-28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgX-21-i9y" userLabel="날짜">
+                                                    <rect key="frame" x="331.66666666666669" y="82.666666666666671" width="56.333333333333314" height="12.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1zg-Ym-ih1" firstAttribute="top" secondItem="zHx-S2-mpJ" secondAttribute="top" constant="14" id="13V-yN-FIB"/>
+                                                <constraint firstItem="bnq-jx-wGO" firstAttribute="top" secondItem="zHx-S2-mpJ" secondAttribute="top" constant="14" id="1YS-fP-e6E"/>
+                                                <constraint firstItem="3PS-Xg-5Oa" firstAttribute="top" secondItem="zOo-B3-pCe" secondAttribute="bottom" constant="10" id="32k-Nu-Ap4"/>
+                                                <constraint firstItem="3PS-Xg-5Oa" firstAttribute="centerX" secondItem="zOo-B3-pCe" secondAttribute="centerX" id="6ez-Or-q2p"/>
+                                                <constraint firstItem="zOo-B3-pCe" firstAttribute="leading" secondItem="bnq-jx-wGO" secondAttribute="trailing" constant="14" id="AHJ-DC-BC9"/>
+                                                <constraint firstItem="NqI-to-GIi" firstAttribute="top" secondItem="1zg-Ym-ih1" secondAttribute="bottom" constant="8" id="E7l-zj-Rug"/>
+                                                <constraint firstAttribute="trailing" secondItem="rgX-21-i9y" secondAttribute="trailing" constant="5" id="IPm-ub-wWS"/>
+                                                <constraint firstItem="8oF-06-rXe" firstAttribute="top" secondItem="bnq-jx-wGO" secondAttribute="bottom" constant="10" id="OW8-q8-ojR"/>
+                                                <constraint firstItem="8oF-06-rXe" firstAttribute="centerX" secondItem="bnq-jx-wGO" secondAttribute="centerX" id="TFU-Xh-3QA"/>
+                                                <constraint firstItem="NqI-to-GIi" firstAttribute="leading" secondItem="1zg-Ym-ih1" secondAttribute="leading" id="Vs2-1A-eUj"/>
+                                                <constraint firstAttribute="trailing" secondItem="zOo-B3-pCe" secondAttribute="trailing" constant="14" id="eET-RM-LAg"/>
+                                                <constraint firstItem="zOo-B3-pCe" firstAttribute="top" secondItem="zHx-S2-mpJ" secondAttribute="top" constant="14" id="lgI-JB-r9y"/>
+                                                <constraint firstAttribute="bottom" secondItem="rgX-21-i9y" secondAttribute="bottom" constant="5" id="mPU-Ak-fri"/>
+                                                <constraint firstItem="vlZ-9O-2H6" firstAttribute="leading" secondItem="NqI-to-GIi" secondAttribute="leading" id="p6g-2F-mrl"/>
+                                                <constraint firstAttribute="bottom" secondItem="vlZ-9O-2H6" secondAttribute="bottom" constant="14" id="pN0-4y-bZa"/>
+                                                <constraint firstItem="1zg-Ym-ih1" firstAttribute="leading" secondItem="zHx-S2-mpJ" secondAttribute="leading" constant="14" id="w2z-s2-drZ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="additional_potential_option_grade" destination="3PS-Xg-5Oa" id="iOT-lU-WKV"/>
+                                            <outlet property="cubeResult" destination="vlZ-9O-2H6" id="xjV-oI-bkv"/>
+                                            <outlet property="cubeType" destination="NqI-to-GIi" id="TdG-Ye-xHL"/>
+                                            <outlet property="potential_option_grade" destination="8oF-06-rXe" id="cB8-yp-5fy"/>
+                                            <outlet property="usedDate" destination="rgX-21-i9y" id="Yvq-Vs-s12"/>
+                                            <outlet property="usedEquipment" destination="1zg-Ym-ih1" id="bci-mH-J0J"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -59,43 +117,32 @@
                             <constraint firstItem="M2k-Ee-4HM" firstAttribute="trailing" secondItem="Mqe-ET-ZeA" secondAttribute="trailing" id="yZL-Fm-fAU"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="fdq-Vs-34V"/>
+                    <connections>
+                        <outlet property="cubeHistoryTableView" destination="Mqe-ET-ZeA" id="akS-la-2hK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dIp-lB-SPx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1869" y="-35"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="B7f-0L-xE7">
-            <objects>
-                <viewController id="6Ru-0z-XM3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PJt-ZM-3Fy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="brB-ao-fEl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xns-dl-Nif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1883" y="-686"/>
+            <point key="canvasLocation" x="2794.6564885496182" y="-35.211267605633807"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="b6b-od-fir">
+        <scene sceneID="kph-Q8-l7m">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6O1-Vj-bix" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YHj-MM-12k" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TUr-nm-jMV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hmo-tn-Brv">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oFQ-2C-7AW"/>
+                        <segue destination="AFg-a0-beg" kind="relationship" relationship="rootViewController" id="Vr4-Jf-fga"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a9e-Ko-Rb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRp-Ix-9Ob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1867.9389312977098" y="-35.211267605633807"/>
         </scene>
     </scenes>
     <resources>

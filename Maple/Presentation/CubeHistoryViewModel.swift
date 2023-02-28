@@ -12,6 +12,10 @@ class CubeHistoryViewModel {
     
 //    var disposeBag = DisposeBag()
     
+    init() {
+        fetchCubeHistory(count: 10, date: "2022-12-28")
+    }
+    
     var cubeHistoryData : [CubeHistoryDTO] = []
     var errMsg : String = ""
     
@@ -22,7 +26,6 @@ class CubeHistoryViewModel {
             switch res {
             case .success(let value):
                 self.cubeHistoryData += value.cube_histories ?? []
-                print("cube HistoryData = \(self.cubeHistoryData)")
             case .failure(let error):
                 self.errMsg = error.localizedDescription
             }

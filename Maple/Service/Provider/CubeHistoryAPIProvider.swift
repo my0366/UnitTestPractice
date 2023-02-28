@@ -23,17 +23,13 @@ class CubeHistoryAPIProvider : ProviderProtocol {
         self.provider = provider
     }
     
-    
     func fetchCubeHistory(date : String,
                           count : Int,
                           completion : @escaping (Result<CubeHistoryResponseDTO, Error>) -> Void)  {
         provider.request(.fetchCubeHistory(date: date, count: count)) { result in
             switch result {
             case .success(let moyaResponse):
-                
-                let statusCode = moyaResponse.statusCode
-                print(statusCode)
-                switch statusCode {
+                switch moyaResponse.statusCode {
                 case 200:
                     completion(.success(try! moyaResponse.map(CubeHistoryResponseDTO.self)))
                 case 400:
@@ -43,7 +39,6 @@ class CubeHistoryAPIProvider : ProviderProtocol {
                 default:
                     break;
                 }
-                
             case .failure(let error):
                 completion(.failure(error))
             }
