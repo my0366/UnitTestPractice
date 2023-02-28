@@ -11,13 +11,10 @@ import XCTest
 class CubeHistoryAPITests: XCTestCase {
     
     var sut: CubeHistoryAPIProvider!
-    
-    override func setUpWithError() throws {
-        sut = CubeHistoryAPIProvider(isStub: true,sampleStatusCode: 200, customEndpointClosure: nil)
-    }
-    
-    
+
     func test_fetchCubeHistory_success() {
+        //When
+        sut = CubeHistoryAPIProvider(isStub: true,sampleStatusCode: 200, customEndpointClosure: nil)
         
         sut.fetchCubeHistory(date: "2022-12-28", count: 10) { res in
             switch res {
@@ -30,4 +27,38 @@ class CubeHistoryAPITests: XCTestCase {
         }
     }
     
+    func test_fetchCubeHistory_badRequest() {
+
+        //When
+        sut = CubeHistoryAPIProvider(isStub: true,sampleStatusCode: 400, customEndpointClosure: nil)
+        
+        
+        sut.fetchCubeHistory(date: "", count: 10) { res in
+            switch res {
+            case .success(_):
+                print("success")
+            case .failure(let moyaError):
+                //then
+                XCTAssertEqual("\(moyaError)", "badRequest")
+            }
+        }
+    }
+    
+    func test_fetchCubeHistory_UnAuthorized() {
+
+        UserDefaultsRepository.saveSecretKey(value: "")
+        //When
+        sut = CubeHistoryAPIProvider(isStub: true,sampleStatusCode: 401, customEndpointClosure: nil)
+        
+        sut.fetchCubeHistory(date: "2022-12-28", count: 10) { res in
+            switch res {
+            case .success(_):
+                print("success")
+            case .failure(let moyaError):
+                //then
+                XCTAssertEqual("\(moyaError)", "unauthorized")
+            }
+        }
+    }
 }
+

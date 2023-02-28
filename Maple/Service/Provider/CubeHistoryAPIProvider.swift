@@ -11,6 +11,7 @@ import Moya
 
 class CubeHistoryAPIProvider : ProviderProtocol {
     
+    
     required init(isStub: Bool, sampleStatusCode: Int, customEndpointClosure: ((CubeHistoryAPI) -> Moya.Endpoint)?) {
         provider = Self.consProvider(isStub, sampleStatusCode, customEndpointClosure)
     }
@@ -21,17 +22,30 @@ class CubeHistoryAPIProvider : ProviderProtocol {
     init(provider: MoyaProvider<CubeHistoryAPI> = .init()) {
         self.provider = provider
     }
-
-
+    
+    
     func fetchCubeHistory(date : String,
-                         count : Int,
+                          count : Int,
                           completion : @escaping (Result<CubeHistoryResponseDTO, Error>) -> Void)  {
         provider.request(.fetchCubeHistory(date: date, count: count)) { result in
             switch result {
             case .success(let moyaResponse):
-                completion(.success(try! moyaResponse.map(CubeHistoryResponseDTO.self)))
-            case .failure(let moyaError):
-                completion(.failure(moyaError))
+                
+                let statusCode = moyaResponse.statusCode
+                print(statusCode)
+                switch statusCode {
+                case 200:
+                    completion(.success(try! moyaResponse.map(CubeHistoryResponseDTO.self)))
+                case 400:
+                    completion(.failure(ApiError.badRequest))
+                case 401:
+                    completion(.failure(ApiError.unauthorized))
+                default:
+                    break;
+                }
+                
+            case .failure(let error):
+                completion(.failure(error))
             }
         }
     }
